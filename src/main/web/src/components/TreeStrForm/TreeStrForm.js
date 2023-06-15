@@ -45,14 +45,14 @@ export function TreeStrForm({defaultTreeStr, hasError, onSubmit}) {
                 {'Step 1: Get '}
                 <a
                     href="https://github.com/btrekkie/RedBlackNode"
-                    target="blank"
+                    target="_blank"
                 >
                     RedBlackNode
                 </a>
                 {' and '}
                 <a
                     href="https://github.com/btrekkie/RedBlackNodeVisualizer"
-                    target="blank"
+                    target="_blank"
                 >
                     RedBlackNodeVisualizer
                 </a>
