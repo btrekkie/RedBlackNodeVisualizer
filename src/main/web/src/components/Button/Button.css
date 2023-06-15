@@ -1,0 +1,46 @@
+.Button {
+    background-color: #fff;
+    border: 1px solid;
+    border-radius: 5px;
+    color: #000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    padding: 6px 12px;
+    user-select: none;
+}
+
+.Button--primary {
+    border-color: #00d000;
+}
+
+.Button--secondary {
+    border-color: #9090ff;
+}
+
+.Button:hover {
+    background-color: #f6f6f6;
+}
+
+.Button--primary:focus {
+    box-shadow: rgba(0, 208, 0, 0.3) 0 0 0 3px;
+}
+
+.Button--secondary:focus {
+    box-shadow: rgba(144, 144, 255, 0.3) 0 0 0 3px;
+}
+
+.Button.Button--disabled {
+    background-color: #ececec;
+    cursor: not-allowed;
+}
+
+.Button--clicked {
+    background-color: #00a000;
+    color: #fff;
+}
+
+.Button--clicked:hover {
+  background-color: #089808;
+}

@@ -1,0 +1,20 @@
+.ErrorIcon {
+    display: inline-block;
+    height: 20px;
+    position: relative;
+    width: 20px;
+}
+
+.ErrorIcon__text {
+    color: #000;
+    font-size: 11px;
+    line-height: 16px;
+    margin-top: 4px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.ErrorIcon__triangle {
+    position: absolute;
+}

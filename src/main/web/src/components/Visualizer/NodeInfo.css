@@ -1,0 +1,66 @@
+.NodeInfo {
+    align-items: flex-start;
+    background-color: #f2f2f8;
+    color: #303030;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    line-height: 18px;
+    min-height: 100%;
+    padding: 20px;
+    width: 100%;
+}
+
+.NodeInfo__buttons {
+    margin-bottom: 15px;
+}
+
+.NodeInfo__error-button {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.NodeInfo__errors {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.NodeInfo__error-icon {
+    margin: 1px 5px 1px 0;
+}
+
+.NodeInfo__is-valid-error-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.NodeInfo__general-info {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.NodeInfo__node-id {
+    font-weight: bold;
+}
+
+.NodeInfo__node-id--black {
+    color: #000;
+}
+
+.NodeInfo__node-id--red {
+    color: #e00000;
+}
+
+.NodeInfo__node-link {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.NodeInfo__debug-str {
+    flex-grow: 1;
+    min-height: 80px;
+    max-height: 500px;
+    margin-bottom: 8px;
+    width: 100%;
+}

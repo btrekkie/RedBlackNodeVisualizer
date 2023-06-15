@@ -1,0 +1,19 @@
+*.class
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.war
+*.ear
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+.DS_Store
+target/**
+!target/red-black-node-visualizer*.jar
+
+src/main/web/node_modules
+src/main/web/build
+src/main/web/yarn-error.log

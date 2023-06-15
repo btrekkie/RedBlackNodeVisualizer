@@ -1,0 +1,139 @@
+.Subtree {
+    display: flex;
+}
+
+.Subtree--root {
+    margin: -10px 5px 0 5px;
+}
+
+.Subtree--root.Subtree--has-error {
+    margin-top: 15px;
+}
+
+.Subtree__subtree-column {
+    z-index: 10;
+}
+
+.Subtree__node-column {
+    position: relative;
+    z-index: 20;
+}
+
+.Subtree__edge {
+    height: 50px;
+    position: relative;
+}
+
+.Subtree__edge-up-left, .Subtree__edge-up-right {
+    bottom: 20px;
+    left: -15px;
+    position: absolute;
+    right: -15px;
+    top: -20px;
+}
+
+.Subtree--collapsed .Subtree__edge-up-left,
+.Subtree--collapsed .Subtree__edge-up-right {
+    bottom: 28px;
+}
+
+.Subtree--collapsed .Subtree__edge-up-left {
+    right: -25px;
+}
+
+.Subtree--collapsed .Subtree__edge-up-right {
+    left: -25px;
+}
+
+.Subtree__edge-up-left {
+    /* Based on https://stackoverflow.com/a/56557106/10935386 */
+    background: url(
+        'data:image/svg+xml;utf8,<svg preserveAspectRatio="none" version="1.1" viewBox="0 0 1 1" xmlns="http://www.w3.org/2000/svg"><line stroke="%23000" stroke-width="2" vector-effect="non-scaling-stroke" x1="0" x2="1" y1="0" y2="1" /></svg>');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.Subtree__edge-up-right {
+    /* Based on https://stackoverflow.com/a/56557106/10935386 */
+    background: url(
+        'data:image/svg+xml;utf8,<svg preserveAspectRatio="none" version="1.1" viewBox="0 0 1 1" xmlns="http://www.w3.org/2000/svg"><line stroke="%23000" stroke-width="2" vector-effect="non-scaling-stroke" x1="0" x2="1" y1="1" y2="0" /></svg>');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.Subtree__node-error {
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    top: -15px;
+}
+
+.Subtree__node {
+    border: 2px solid #000;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    height: 40px;
+    margin: 10px -5px 0 -5px;
+    padding: 3px;
+    user-select: none;
+    width: 40px;
+}
+
+.Subtree__node--black {
+    background-color: #000;
+}
+
+.Subtree__node--red {
+    background-color: #e00000;
+}
+
+.Subtree__node--selected {
+    border-color: #4040ff;
+    border-width: 3px;
+    padding: 2px;
+}
+
+.Subtree__node__text {
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 30px;
+    overflow: hidden;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.Subtree__collapsed-subtree {
+    cursor: pointer;
+    margin: 20px -5px 0 -5px;
+    position: relative;
+    height: 70px;
+    user-select: none;
+    width: 60px;
+}
+
+.Subtree__collapsed-subtree__triangle {
+    position: absolute;
+}
+
+.Subtree__collapsed-subtree__polygon {
+    fill: #c0c0c0;
+    stroke: #000;
+    stroke-width: 2px;
+}
+
+.Subtree__collapsed-subtree__error {
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    top: 16px;
+}
+
+.Subtree__collapsed-subtree__text {
+    color: #404040;
+    font-size: 11px;
+    line-height: 13px;
+    padding-top: 39px;
+    position: relative;
+    text-align: center;
+}

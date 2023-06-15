@@ -1,0 +1,27 @@
+.TreeStrForm {
+    color: #303030;
+    font-size: 18px;
+    padding: 20px;
+}
+
+.TreeStrForm__heading {
+    font-size: 24px;
+}
+
+.TreeStrForm__textarea {
+    height: 150px;
+    width: 500px;
+}
+
+.TreeStrForm__textarea--error {
+    border-color: #f00;
+}
+
+.TreeStrForm__error {
+    color: #f00;
+    font-size: 14px;
+}
+
+.TreeStrForm__button {
+    margin-top: 8px;
+}
