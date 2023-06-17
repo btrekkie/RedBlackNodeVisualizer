@@ -54,7 +54,7 @@ export class Node {
     depth = null;
 
     // The node's height, i.e. the maximum number of edges in a path from the
-    // node to a non-dummy leaf node
+    // node down to a non-dummy leaf node
     height = null;
 
     // The node's black depth, i.e. the number of black nodes in the path from
@@ -62,7 +62,7 @@ export class Node {
     blackDepth = null;
 
     // The node's black height, i.e. the maximum number of black nodes in a path
-    // from the node down to a dummy leaf node, excluding the dummy leaf node.
+    // from the node down to a non-dummy leaf node
     blackHeight = null;
 
     // Whether all paths from the node down to a dummy leaf node have the same

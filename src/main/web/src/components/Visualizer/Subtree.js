@@ -32,10 +32,8 @@ const COLLAPSED_SUBTREE_ANCHOR_Y = 1;
 
 /** Returns a short text representation of the specified integer. */
 function prettyPrintInt(value) {
-    if (value < 1000) {
+    if (value < 10000) {
         return value;
-    } else if (value < 10000) {
-        return `${Math.floor(value / 100) / 10}K`;
     } else if (value < 1000000) {
         return `${Math.floor(value / 1000)}K`;
     } else if (value < 10000000) {
